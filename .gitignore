@@ -24,5 +24,7 @@ wp-trackback.php
 xmlrpc.php
 wp-content/languages
 wp-content/plugins
+wp-content/uploads
+
 
 # exceptions
