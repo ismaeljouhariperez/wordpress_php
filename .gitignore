@@ -25,6 +25,9 @@ xmlrpc.php
 wp-content/languages
 wp-content/plugins
 wp-content/uploads
+wp-content/themes/twentyseventeen
+wp-content/themes/twentynineteen
+
 
 
 # exceptions
