@@ -81,6 +81,13 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/metaboxes\/sponso.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/metaboxes\/sponso.php",
+		"oF": 0
+		},
 	"\/node_modules": {
 		"ft": 65536,
 		"oA": 2,
@@ -1254,6 +1261,27 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/template-page.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-page.php",
+		"oF": 0
+		},
+	"\/template-post.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/template-post.php",
+		"oF": 0
+		},
+	"\/utils.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/utils.php",
+		"oF": 0
 		}
 	},
 "hooks": [
