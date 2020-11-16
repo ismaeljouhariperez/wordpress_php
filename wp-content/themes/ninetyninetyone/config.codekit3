@@ -16,28 +16,35 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
-	"\/custom.css": {
+	"\/assets\/admin-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/admin-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/assets\/admin.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/custom-min.css",
+		"oAP": "\/assets\/admin-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/custom.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
+	"\/assets\/admin.js": {
+		"ft": 64,
 		"ma": 0,
+		"mi": 1,
 		"oA": 0,
-		"oAP": "\/custom.css",
+		"oAP": "\/assets\/admin-min.js",
 		"oF": 0,
-		"oS": 0,
-		"uL": 1
+		"sC": 3,
+		"tS": 0
 		},
 	"\/footer.php": {
 		"cB": 0,
@@ -67,13 +74,6 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
-	"\/home.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/home.php",
-		"oF": 0
-		},
 	"\/index.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -88,13 +88,50 @@
 		"oAP": "\/metaboxes\/sponso.php",
 		"oF": 0
 		},
-	"\/node_modules": {
-		"ft": 65536,
-		"oA": 2,
-		"oAP": "\/build\/node_modules",
+	"\/options\/agence.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/options\/agence.php",
 		"oF": 0
 		},
-	"\/node_modules\/bootstrap\/scss\/_alert.scss": {
+	"\/parts\/card.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/parts\/card.php",
+		"oF": 0
+		},
+	"\/scss\/custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/custom-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/scss\/custom.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/custom.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/scss\/node_modules": {
+		"ft": 65536,
+		"oA": 2,
+		"oAP": "\/build\/scss\/node_modules",
+		"oF": 0
+		},
+	"\/scss\/node_modules\/bootstrap\/scss\/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -102,12 +139,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_alert.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_alert.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_badge.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -115,12 +152,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_badge.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_badge.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_breadcrumb.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_breadcrumb.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -128,12 +165,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_breadcrumb.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_breadcrumb.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_button-group.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_button-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -141,12 +178,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_button-group.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_button-group.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_buttons.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -154,12 +191,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_buttons.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_card.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_card.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -167,12 +204,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_card.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_card.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_carousel.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_carousel.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -180,12 +217,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_carousel.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_carousel.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_close.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_close.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -193,12 +230,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_close.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_close.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_code.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_code.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -206,12 +243,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_code.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_code.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_custom-forms.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_custom-forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -219,12 +256,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_custom-forms.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_custom-forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_dropdown.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_dropdown.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -232,12 +269,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_dropdown.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_dropdown.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_forms.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -245,12 +282,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_forms.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_functions.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_functions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -258,12 +295,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_functions.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_functions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_grid.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -271,12 +308,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_grid.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_images.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_images.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -284,12 +321,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_images.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_images.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_input-group.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_input-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -297,12 +334,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_input-group.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_input-group.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_jumbotron.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_jumbotron.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -310,12 +347,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_jumbotron.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_jumbotron.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_list-group.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -323,12 +360,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_list-group.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_list-group.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_media.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_media.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -336,12 +373,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_media.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_media.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_mixins.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_mixins.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -349,12 +386,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_mixins.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_mixins.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_modal.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_modal.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -362,12 +399,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_modal.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_modal.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_nav.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_nav.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -375,12 +412,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_nav.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_nav.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_navbar.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_navbar.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -388,12 +425,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_navbar.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_navbar.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_pagination.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -401,12 +438,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_pagination.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_pagination.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_popover.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_popover.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -414,12 +451,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_popover.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_popover.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_print.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_print.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -427,12 +464,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_print.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_print.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_progress.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_progress.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -440,12 +477,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_progress.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_progress.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_reboot.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_reboot.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -453,12 +490,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_reboot.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_reboot.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_root.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_root.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -466,12 +503,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_root.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_root.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_spinners.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_spinners.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -479,12 +516,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_spinners.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_spinners.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_tables.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_tables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -492,12 +529,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_tables.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_tables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_toasts.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_toasts.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -505,12 +542,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_toasts.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_toasts.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_tooltip.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_tooltip.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -518,12 +555,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_tooltip.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_tooltip.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_transitions.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_transitions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -531,12 +568,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_transitions.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_transitions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_type.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_type.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -544,12 +581,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_type.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_type.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_utilities.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_utilities.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -557,12 +594,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_utilities.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_utilities.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/_variables.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/_variables.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -570,12 +607,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/_variables.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/_variables.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/bootstrap.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/bootstrap.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -583,12 +620,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/bootstrap.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/bootstrap.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_alert.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_alert.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -596,12 +633,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_alert.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_alert.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_background-variant.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_background-variant.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -609,12 +646,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_background-variant.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_background-variant.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_badge.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_badge.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -622,12 +659,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_badge.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_badge.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_border-radius.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_border-radius.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -635,12 +672,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_border-radius.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_border-radius.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_box-shadow.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_box-shadow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -648,12 +685,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_box-shadow.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_box-shadow.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_breakpoints.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_breakpoints.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -661,12 +698,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_breakpoints.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_breakpoints.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_buttons.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_buttons.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -674,12 +711,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_buttons.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_buttons.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_caret.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_caret.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -687,12 +724,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_caret.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_caret.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_clearfix.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -700,12 +737,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_clearfix.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_clearfix.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_deprecate.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_deprecate.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -713,12 +750,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_deprecate.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_deprecate.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_float.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -726,12 +763,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_float.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_float.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_forms.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_forms.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -739,12 +776,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_forms.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_gradients.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_gradients.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -752,12 +789,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_gradients.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_gradients.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_grid-framework.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_grid-framework.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -765,12 +802,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_grid-framework.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_grid-framework.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_grid.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_grid.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -778,12 +815,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_grid.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_grid.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_hover.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_hover.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -791,12 +828,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_hover.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_hover.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_image.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_image.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -804,12 +841,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_image.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_image.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_list-group.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_list-group.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -817,12 +854,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_list-group.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_list-group.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_lists.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_lists.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -830,12 +867,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_lists.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_lists.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_nav-divider.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_nav-divider.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -843,12 +880,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_nav-divider.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_nav-divider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_pagination.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_pagination.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -856,12 +893,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_pagination.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_pagination.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_reset-text.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_reset-text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -869,12 +906,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_reset-text.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_reset-text.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_resize.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_resize.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -882,12 +919,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_resize.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_resize.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_screen-reader.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_screen-reader.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -895,12 +932,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_screen-reader.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_screen-reader.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_size.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_size.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -908,12 +945,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_size.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_size.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_table-row.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_table-row.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -921,12 +958,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_table-row.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_table-row.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_text-emphasis.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-emphasis.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -934,12 +971,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_text-emphasis.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-emphasis.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_text-hide.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-hide.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -947,12 +984,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_text-hide.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-hide.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_text-truncate.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-truncate.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -960,12 +997,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_text-truncate.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_text-truncate.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_transition.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_transition.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -973,12 +1010,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_transition.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_transition.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/mixins\/_visibility.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/mixins\/_visibility.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -986,12 +1023,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/mixins\/_visibility.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/mixins\/_visibility.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_align.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_align.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -999,12 +1036,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_align.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_align.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_background.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_background.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1012,12 +1049,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_background.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_background.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_borders.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_borders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1025,12 +1062,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_borders.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_borders.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_clearfix.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_clearfix.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1038,12 +1075,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_clearfix.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_clearfix.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_display.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_display.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1051,12 +1088,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_display.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_display.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_embed.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_embed.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1064,12 +1101,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_embed.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_embed.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_flex.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_flex.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1077,12 +1114,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_flex.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_flex.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_float.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_float.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1090,12 +1127,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_float.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_float.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_interactions.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_interactions.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1103,12 +1140,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_interactions.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_interactions.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_overflow.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_overflow.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1116,12 +1153,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_overflow.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_overflow.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_position.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_position.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1129,12 +1166,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_position.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_position.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_screenreaders.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_screenreaders.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1142,12 +1179,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_screenreaders.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_screenreaders.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_shadows.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_shadows.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1155,12 +1192,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_shadows.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_shadows.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_sizing.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_sizing.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1168,12 +1205,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_sizing.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_sizing.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_spacing.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_spacing.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1181,12 +1218,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_spacing.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_spacing.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_stretched-link.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_stretched-link.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1194,12 +1231,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_stretched-link.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_stretched-link.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_text.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_text.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1207,12 +1244,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_text.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_text.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/utilities\/_visibility.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/utilities\/_visibility.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1220,12 +1257,12 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/utilities\/_visibility.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/utilities\/_visibility.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/node_modules\/bootstrap\/scss\/vendor\/_rfs.scss": {
+	"\/scss\/node_modules\/bootstrap\/scss\/vendor\/_rfs.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -1233,10 +1270,17 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "\/node_modules\/bootstrap\/scss\/vendor\/_rfs.css",
+		"oAP": "\/scss\/node_modules\/bootstrap\/scss\/vendor\/_rfs.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/search.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/search.php",
+		"oF": 0
 		},
 	"\/searchform.php": {
 		"cB": 0,
@@ -1261,6 +1305,13 @@
 		"oAP": "\/style-min.css",
 		"oF": 0,
 		"oS": 3
+		},
+	"\/taxonomy-sport.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/taxonomy-sport.php",
+		"oF": 0
 		},
 	"\/template-page.php": {
 		"cB": 0,

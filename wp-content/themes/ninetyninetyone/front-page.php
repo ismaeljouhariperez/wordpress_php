@@ -17,6 +17,9 @@
                 <h1> Aucun article publié </h1>
         </div>
     <?php endif; ?>
+
+    <?php //wp_list_categories(['taxonomy' => 'sport', 'title_li' => '']) ?>
+
     </div>
 </div>
 

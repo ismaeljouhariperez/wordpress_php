@@ -65,7 +65,7 @@ function ninetyninetyone_supports()
 
 function ninetyninetyone_registerassets()
 {
-    wp_register_style('bootstrap', '/wp-content/themes/ninetyninetyone/custom.css');
+    wp_register_style('bootstrap', get_template_directory_uri() . '/scss/custom.css');
     wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
     wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', [], null, true);
     wp_deregister_script('jquery');
@@ -126,7 +126,7 @@ function nineninetyone_pagination()
     echo '</nav>';
 }
 
-function ninetyninetyone_init()
+function ninetyninetyone_registeritems()
 {
     register_taxonomy('sport', 'post', [
         'labels' => [
@@ -145,12 +145,28 @@ function ninetyninetyone_init()
         'hierarchical' => true,
         'show_admin_column' => true,
     ]);
+
+    register_post_type('pin', [
+        'label' => 'Types',
+        'public' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-building',
+        'supports' => ['title', 'editor', 'thumbnail'],
+        'show_in_rest' => true,
+        'has_archive' => true,
+    ]);
 }
 
+
 // Actions
-add_action( 'init', 'ninetyninetyone_init');
+add_action( 'init', 'ninetyninetyone_registeritems');
 add_action( 'after_setup_theme', 'ninetyninetyone_supports' );
 add_action( 'after_setup_theme', 'ninetyninetyone_registerassets' );
+add_action('admin_enqueue_scripts', function()
+{
+    wp_enqueue_style('admin_ninetyninetyone', get_template_directory_uri() . '/assets/admin-min.css');
+});
+
 
 // Filters
 add_filter( 'document_title_separator', 'nineninetyone_title_separator');
@@ -158,8 +174,54 @@ add_filter( 'document_title_parts', 'nineninetyone_title_parts');
 add_filter( 'nav_menu_css_class', 'nineninetyone_menu_class');
 add_filter( 'nav_menu_link_attributes', 'nineninetyone_menu_links_class');
 
+add_filter( 'manage_pin_posts_columns', function($columns)
+{
+    return [
+        'cb' => $columns['cb'],
+        'thumbnail' => 'Miniature',
+        'title' => $columns['title'],
+        'date' => $columns['date']
+    ];
+});
+
+add_filter( 'manage_pin_posts_custom_column', function($column, $postId)
+{
+    if($column === "thumbnail")
+    {
+        the_post_thumbnail('thumbnail', $postId);
+    }
+}, 10, 2);
+
+add_filter('manage_post_posts_columns', function ($columns) {
+    $newColumns = [];
+    foreach($columns as $k => $v) {
+        if ($k === 'date') {
+            $newColumns['sponso'] = 'Article sponsorisé ?';
+        }
+        $newColumns[$k] = $v;
+    }
+    return $newColumns;
+});
+
+add_filter('manage_post_posts_custom_column', function ($column, $postId) {
+    if ($column === 'sponso') {
+        if (!empty(get_post_meta($postId, SponsoMetaBox::META_KEY, true))) {
+            $class = 'yes';
+        } else {
+            $class = 'no';
+        }
+        echo '<div class="bullet bullet-' . $class . '"></div>';
+    }
+}, 10, 2);
+
+
 require_once('metaboxes/sponso.php');
 SponsoMetaBox::register();
+require_once('options/agence.php');
+AgenceMenuPage::register();
+
+
+
 
 
 ?>
