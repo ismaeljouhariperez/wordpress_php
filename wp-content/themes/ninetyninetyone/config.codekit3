@@ -16,35 +16,23 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
-	"\/assets\/admin-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
+	"\/assets\/images\/logo.png": {
+		"ft": 32768,
+		"iS": 2116,
 		"oA": 0,
-		"oAP": "\/assets\/admin-min-min.js",
+		"oAP": "\/assets\/images\/logo.png",
 		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
-	"\/assets\/admin.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
+	"\/contact.php": {
+		"cB": 0,
+		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/assets\/admin-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/assets\/admin.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/admin-min.js",
-		"oF": 0,
-		"sC": 3,
-		"tS": 0
+		"oAP": "\/contact.php",
+		"oF": 0
 		},
 	"\/footer.php": {
 		"cB": 0,
@@ -81,36 +69,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/metaboxes\/sponso.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/metaboxes\/sponso.php",
-		"oF": 0
-		},
-	"\/options\/agence.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/options\/agence.php",
-		"oF": 0
-		},
 	"\/parts\/card.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/parts\/card.php",
 		"oF": 0
-		},
-	"\/scss\/custom.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/scss\/custom-min.css",
-		"oF": 0,
-		"oS": 3
 		},
 	"\/scss\/custom.scss": {
 		"aP": 0,

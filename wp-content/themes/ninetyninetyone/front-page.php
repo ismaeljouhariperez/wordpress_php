@@ -1,4 +1,4 @@
-<?= get_header();?>
+<?php get_header();?>
 
 <div class="card-deck m-0">
     <div class="row mx-auto py-5">
@@ -20,8 +20,7 @@
 
     <?php //wp_list_categories(['taxonomy' => 'sport', 'title_li' => '']) ?>
 
-    </div>
 </div>
 
 
-<?= get_footer() ?>
+<?php get_footer() ?>

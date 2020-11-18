@@ -1,4 +1,4 @@
-<?= get_header();?>
+<?php get_header();?>
 
 <!-- TITLE -->
 <div class="container-fluid ">
@@ -6,11 +6,11 @@
     <div class="row mx-auto">
         <div class="col-12">
             <h1 class="text-left text-secondary display-3"> <?= the_title() ?></h1>
-            <?php if(get_post_meta(get_the_ID(), SponsoMetaBox::META_KEY, true) === '1'): ?>
+            <?php //if(get_post_meta(get_the_ID(), SponsoMetaBox::META_KEY, true) === '1'): ?>
                 <div class='alert alert-info'>
                     Cet article est sponsorisé
                 </div>
-            <?php endif ?>
+            <?php //endif ?>
         </div>
     </div>
 </div>
@@ -73,33 +73,38 @@
 <?php previous_post_link() ?>
 <?php next_post_link() ?>
 
-<h2>Articles relatifs</h2>
-
 <?php 
-$terms = array_map(function($term) 
-{
-    return $term->term_id;
-}, get_the_terms(get_post(), 'sport'));
-$query = new WP_Query(
+
+$sports = get_terms(['taxonomy' => 'sport']);
+
+if ( ! empty( $sports ) && ! is_wp_error( $sports ) ) : ?>
+
+    <?php $terms = array_map(function($term) 
+    {
+        return $term->term_id;
+    }, get_the_terms(get_post(), 'sport'));
+
+    $query = new WP_Query(
     [
-    'post__not_in' => [get_the_ID()],
-    'post_type' => 'post',
-    'posts_per_page' => 3,
-    'tax_query' => [
+        'post__not_in' => [get_the_ID()],
+        'post_type' => 'post',
+        'posts_per_page' => 3,
+        'tax_query' => 
         [
-            'taxonomy' => 'sport',
-            'field' => 'slug',
-            'terms' => $sports
+            [
+                'taxonomy' => 'sport',
+                'field' => 'slug',
+                'terms' => $terms
+            ]
         ]
-    ]
-]);
-while($query->have_posts()) : the_post() ?>
+    ]);
+    while($query->have_posts()) : the_post() ?>
+        <h2>Articles relatifs</h2>
 
-<?php endwhile ; wp_reset_postdata(); //Permet de conserver le même ID d'article?>
-
-?>
-
-
+    <?php endwhile ; wp_reset_postdata(); //Permet de conserver le même ID d'article 
+    
+endif ?>
 
 
-<?= get_footer() ?>
+
+<?php get_footer() ?>

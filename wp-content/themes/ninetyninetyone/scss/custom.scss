@@ -3,15 +3,44 @@
 
 // Variable overrides
 
-/*$theme-colors:
+$theme-colors:
 (
-	"primary":#F00000,
+	"primary":transparent,
 	"secondary":#1C1C1A,
 	"info":#F7F9FB
-);*/ 
+);
 
 /**************************** IMPORT ****************************/
 
 // Include all of Bootstrap
 
 @import "node_modules/bootstrap/scss/bootstrap";
+
+
+/**************************** CSS ****************************/
+
+*
+{
+	margin:0;
+	padding:0;
+}
+
+html, body 
+{
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+a
+{
+	text-decoration: none;
+	text-decoration-color: none;
+	-moz-text-decoration-style: none;
+	text-decoration-style: none;
+}
+
+.navbar
+{
+	font-family: Arimo;
+}
+

@@ -60,8 +60,9 @@ function ninetyninetyone_supports()
         'flex-width'  => true,
         'header-text' => array( 'site-title', 'site-description' ),
     ) );
-
 }
+
+add_action( 'after_setup_theme', 'ninetyninetyone_supports' );
 
 function ninetyninetyone_registerassets()
 {
@@ -74,6 +75,10 @@ function ninetyninetyone_registerassets()
     wp_enqueue_style('bootstrap');
     wp_enqueue_script('bootstrap');
 }
+
+add_action( 'after_setup_theme', 'ninetyninetyone_registerassets' );
+
+
 
 // Change title separator
 function nineninetyone_title_separator()
@@ -126,102 +131,34 @@ function nineninetyone_pagination()
     echo '</nav>';
 }
 
-function ninetyninetyone_registeritems()
-{
-    register_taxonomy('sport', 'post', [
-        'labels' => [
-            'name' => 'Sport',
-            'singular_name'     => 'Sport',
-            'plural_name'       => 'Sports',
-            'search_items'      => 'Rechercher des sports',
-            'all_items'         => 'Tous les sports',
-            'edit_item'         => 'Editer le sport',
-            'update_item'       => 'Mettre à jour le sport',
-            'add_new_item'      => 'Ajouter un nouveau sport',
-            'new_item_name'     => 'Ajouter un nouveau sport',
-            'menu_name'         => 'Sport',
-        ],
-        'show_in_rest' => true,
-        'hierarchical' => true,
-        'show_admin_column' => true,
-    ]);
-
-    register_post_type('pin', [
-        'label' => 'Types',
-        'public' => true,
-        'menu_position' => 3,
-        'menu_icon' => 'dashicons-building',
-        'supports' => ['title', 'editor', 'thumbnail'],
-        'show_in_rest' => true,
-        'has_archive' => true,
-    ]);
-}
-
-
-// Actions
-add_action( 'init', 'ninetyninetyone_registeritems');
-add_action( 'after_setup_theme', 'ninetyninetyone_supports' );
-add_action( 'after_setup_theme', 'ninetyninetyone_registerassets' );
-add_action('admin_enqueue_scripts', function()
-{
-    wp_enqueue_style('admin_ninetyninetyone', get_template_directory_uri() . '/assets/admin-min.css');
-});
-
 
 // Filters
 add_filter( 'document_title_separator', 'nineninetyone_title_separator');
 add_filter( 'document_title_parts', 'nineninetyone_title_parts');
-add_filter( 'nav_menu_css_class', 'nineninetyone_menu_class');
 add_filter( 'nav_menu_link_attributes', 'nineninetyone_menu_links_class');
 
-add_filter( 'manage_pin_posts_columns', function($columns)
+/**
+ * @param WP_Query $query
+ */
+function ninetyninetyone_pre_get_posts(WP_Query $query)
 {
-    return [
-        'cb' => $columns['cb'],
-        'thumbnail' => 'Miniature',
-        'title' => $columns['title'],
-        'date' => $columns['date']
-    ];
-});
-
-add_filter( 'manage_pin_posts_custom_column', function($column, $postId)
-{
-    if($column === "thumbnail")
+    if(is_admin() )
     {
-        the_post_thumbnail('thumbnail', $postId);
+        return;
     }
-}, 10, 2);
 
-add_filter('manage_post_posts_columns', function ($columns) {
-    $newColumns = [];
-    foreach($columns as $k => $v) {
-        if ($k === 'date') {
-            $newColumns['sponso'] = 'Article sponsorisé ?';
-        }
-        $newColumns[$k] = $v;
+}
+add_action('pre_get_posts', 'ninetyninetyone_pre_get_posts');
+
+
+
+function atg_menu_classes($classes, $item, $args) {
+    if($args->theme_location == 'secondary') {
+      $classes[] = 'list-inline-item';
     }
-    return $newColumns;
-});
+    return $classes;
+  }
 
-add_filter('manage_post_posts_custom_column', function ($column, $postId) {
-    if ($column === 'sponso') {
-        if (!empty(get_post_meta($postId, SponsoMetaBox::META_KEY, true))) {
-            $class = 'yes';
-        } else {
-            $class = 'no';
-        }
-        echo '<div class="bullet bullet-' . $class . '"></div>';
-    }
-}, 10, 2);
-
-
-require_once('metaboxes/sponso.php');
-SponsoMetaBox::register();
-require_once('options/agence.php');
-AgenceMenuPage::register();
-
-
-
-
+  add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
 
 ?>

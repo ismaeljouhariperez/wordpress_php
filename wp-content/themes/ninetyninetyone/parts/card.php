@@ -10,5 +10,5 @@
     <p class="date card-text text-muted text-height-3"><?= the_date() ?></p>
 </div>
 <div class="card-footer bg-white">
-<small class="text-muted">Temps de lecture :</small>
+    <small class="text-muted">Temps de lecture :</small>
 </div>
