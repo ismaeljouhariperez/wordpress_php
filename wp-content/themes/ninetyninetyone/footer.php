@@ -1,61 +1,47 @@
 </div>
+</main>
 
-<!-- FOOTER -->
-<footer class="page-footer text-white bg-secondary pt-4 border-top border-white">
-  <div class="container-fluid text-center text-md-left">
-    <div class="row mx-auto">
-      <div class="col-md-4 mt-md-0 mt-3">
-        <!-- PAGES -->
-        <h5 class="text-uppercase text-light">Plan du site</h5>
-        <ul class="list-unstyled">
-          <li>
-            <a href="index.php" class="text-white">Accueil</a>
-          </li>
-          <li>
-            <a href="index.php?controller=article&task=index" class="text-white">Chapitres</a>
-          </li>
-          <li>
-            <a href="index.php?controller=contact&task=contact_author" class="text-white">Contact</a>
-          </li>
-        </ul>
-      </div>
-      <!-- TITLE -->
-      <div class="col-md-4 mb-md-0 mb-3 text-center icon-footer">
-        <img src="../public/images/logo.svg" alt="Logo du site Jean Forteroche">        
-        <p class="text-uppercase pt-4 ">Site officiel de Jean Forteroche</p>
-      </div>
-      <!-- ADMIN -->
-      <div class="d-flex flex-column col-md-4 mb-md-0 mb-3 align-items-md-end text-md-right text-lg-right text-xl-right text-sm-center">
-        <h5 class="text-uppercase">Espace Administrateur</h5>
-        <ul class="list-unstyled">
-          <!-- ADMIN OPTIONS -->
-          <?php if (isset($_SESSION["username"])) { ?>      
-            <li>
-              <a href="index.php?controller=admin&task=logout" class="text-white" data-toggle="modal" data-target="#exampleModalCenter">Se déconnecter</a>
-              <?php include 'view/backend/logout-modal.php' ?>
-            </li>
-            <li>
-              <a href="index.php?controller=admin&task=add" class="text-white">Ajouter un utilisateur</a>
-            </li>
-            <li>
-              <a href="index.php?controller=admin&task=index" class="text-white">Administration</a>
-            </li>         
-          <?php } else { ?>
-            <li>
-              <a href="index.php?controller=admin&task=login" target="_blank" class="text-white">Se connecter</a>
-            </li>  
-          <?php } ?>  
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright text-center bg-secondary py-3">© 2020 Copyright Jean Forteroche
-  </div>
-</footer>
-
-  
-
-
-    <?php wp_footer() ?>
+    <!-- FOOTER -->
+    <footer class="bg-secondary mt-5"> 
+        <nav class="footer-first">  
+            <div class="col-2">
+                <a href="/index.php"><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore-white.svg" width="150px" height="auto" alt="" /></a>
+            </div>
+        
+            <div class="footer-items col-10" id="navbarSupportedContent">
+                <ul>
+                <?php 
+            wp_nav_menu([
+                'theme_location' => 'header', 
+                'container' => false,
+                'menu_class' => 'header-items'
+            ]) 
+        
+            ?>
+                </ul>
+        
+            </div>
+        </nav>
+        <div class="footer-second">
+            <div class="col-4">
+                <p class="footer-text text-white">Offshore is a journal for the daily explorators, for those who love the outdoors, telling stories of passionate people inspired by nature. We are an inspirational medium for travelers and photography lovers.</p>
+            </div>
+            <div class="smo">
+                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Facebook.png"></a>
+                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Instagram.png"></a>
+                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Twitter.png"></a>
+                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Youtube.png"></a>
+            </div>
+        </div>
+        <div class="footer-third pt-2 pb-3">
+            <div class="col-5 credits">
+                <span class="text-white">Design by Ismael Perez</span>
+                <span class="text-white">© 2020 Offshore Magazine</span>
+                <span class="text-white">Privacy Policy</span>
+            </div>
+        </div>
+    </footer>
+<?php wp_footer() ?>
 </body>
-</html>
+</html> 
+

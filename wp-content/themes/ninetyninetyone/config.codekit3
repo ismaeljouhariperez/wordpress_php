@@ -16,11 +16,92 @@
 		"oAP": "\/404.php",
 		"oF": 0
 		},
+	"\/about.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/about.php",
+		"oF": 0
+		},
+	"\/assets\/images\/404.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/404.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/Logo-Offshore-white.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/Logo-Offshore-white.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/images\/Logo-Offshore.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/images\/Logo-Offshore.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/assets\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 2116,
 		"oA": 0,
 		"oAP": "\/assets\/images\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/smo\/Facebook.png": {
+		"ft": 32768,
+		"iS": 281,
+		"oA": 0,
+		"oAP": "\/assets\/smo\/Facebook.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/smo\/Instagram.png": {
+		"ft": 32768,
+		"iS": 642,
+		"oA": 0,
+		"oAP": "\/assets\/smo\/Instagram.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/smo\/Twitter.png": {
+		"ft": 32768,
+		"iS": 479,
+		"oA": 0,
+		"oAP": "\/assets\/smo\/Twitter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/assets\/smo\/Youtube.png": {
+		"ft": 32768,
+		"iS": 403,
+		"oA": 0,
+		"oAP": "\/assets\/smo\/Youtube.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -75,6 +156,16 @@
 		"oA": 0,
 		"oAP": "\/parts\/card.php",
 		"oF": 0
+		},
+	"\/scss\/custom.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/scss\/custom-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/scss\/custom.scss": {
 		"aP": 0,

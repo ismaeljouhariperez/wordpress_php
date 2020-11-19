@@ -5,25 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php wp_head() ?>
 </head>
-<body>
+<body class="Site">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-4 d-flex align-items-end">        
-        <a class="navbar-brand" href="#">
-            <img src="http://localhost/wp-content/uploads/2020/11/logo.png" width="150px" height="auto" alt="">
-        </a>
-        <div class="collapse navbar-collapse d-flex justify-content-around" id="navbarSupportedContent">
-        <?php 
+    <nav class="header <?php if(!is_front_page()): ?> mb-5 <?php endif ?>">  
+        <div class="col-2">
+            <a class="col-10" href="/index.php">
+                <img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore.svg" width="150px" height="auto" alt="">
+            </a>
+        </div>
+      
+        <div class="header-items" id="navbarSupportedContent">
+            <ul>
+            <?php 
         wp_nav_menu([
             'theme_location' => 'header', 
             'container' => false,
-            'menu_class' => 'navbar-nav ml-auto'
+            'menu_class' => 'header-items'
         ]) 
        
         ?>
+            </ul>
+      
          </div>
        
 
     </nav>
 
-    
-    <div class="container">
+    <main class="Site-content">
+        <?php if(!is_front_page()): ?>
+                    <div class="container">
+       <?php endif ?>

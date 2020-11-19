@@ -1,0 +1,1 @@
+aͶ_<?php exit; ?>a:1:{s:7:"content";s:56:"{"0":"NaN","good":"13","recommended":"5","critical":"0"}";}
