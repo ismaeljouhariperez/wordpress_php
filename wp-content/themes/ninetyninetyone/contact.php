@@ -9,24 +9,24 @@ get_header();
 
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-<form class="py-5">
+<form class="py-5" method="POST">
   <div class="form-group">
-    <label for="exampleFormControlInput1">Name</label>
-    <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="name" required>
+    <label for="name">Name</label>
+    <input type="name" name="user_name" class="form-control" id="name" placeholder="name" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Surname</label>
-    <input type="surname" class="form-control" id="exampleFormControlInput1" placeholder="surname" required>
+    <label for="surname">Surname</label>
+    <input type="surname" name="user_surname" class="form-control" id="surname" placeholder="surname" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    <label for="email">Email address</label>
+    <input type="email" name="user_email" class="form-control" id="email" placeholder="name@example.com" required>
   </div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    <label for="message">Message</label>
+    <textarea class="form-control" name="user_message" id="message" rows="3" required></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Send</button>
+  <button type="submit" value="submit" class="btn btn-primary">Send</button>
 
 </form>
 
