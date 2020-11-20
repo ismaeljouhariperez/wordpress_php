@@ -23,6 +23,26 @@
 		"oAP": "\/about.php",
 		"oF": 0
 		},
+	"\/assets\/custom-login-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/custom-login-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/custom-login.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/custom-login-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/assets\/images\/404.svg": {
 		"ft": 2097152,
 		"miP": 0,

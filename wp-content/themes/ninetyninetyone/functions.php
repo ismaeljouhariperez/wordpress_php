@@ -2,6 +2,15 @@
 
 //namespace App;
 
+function my_login_logo() {
+	wp_enqueue_style( 
+        'custom-login', 
+        get_template_directory_uri() . '/assets/custom-login.css', 
+        array( 'login' ) 
+    );
+}
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
 function ninetyninetyone_supports()
 {
     /** Automatic feed link*/
@@ -20,7 +29,7 @@ function ninetyninetyone_supports()
     add_image_size( 'post-thumbnail', 350, 215, true);
     add_image_size( 'screen', 2000, 1000, true);
     // remove width & height attributes from images
-    
+
     function remove_img_attr ($html)
     {
         return preg_replace('/(width|height)="\d+"\s/', "", $html);
