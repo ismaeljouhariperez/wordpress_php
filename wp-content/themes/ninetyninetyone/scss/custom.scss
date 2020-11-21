@@ -69,6 +69,27 @@ h1,h2,h3,h4,h5
 	font-family:Inter;
 }
 
+h1.admin
+{
+	font-size:1.5em;
+}
+
+/*** ADDITIONAL DISPLAYS ***/
+
+.display-5
+{
+	font-size:1.7em;
+}
+
+.display-6
+{
+	font-size:1.5em;
+}
+
+.display-7
+{
+	font-size:1.3em;
+}
 
 /*** HEADER ***/
 
@@ -139,7 +160,8 @@ article
 	bottom:0;
 	left:0;
 	opacity:.75;
-	z-index:-1;	display:flex;
+	z-index:-1;	
+	display:flex;
 	flex-flow:column nowrap;
 	justify-content:center;
 	align-items:center;
