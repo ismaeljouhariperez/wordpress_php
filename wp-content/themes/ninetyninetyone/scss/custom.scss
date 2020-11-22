@@ -42,6 +42,8 @@ html, body
 	scroll-behavior: smooth;
 }
 
+/*** ELEMENTS ***/
+
 a, a:hover
 {
 	text-decoration: none;
@@ -55,11 +57,24 @@ li
 	list-style-type: none;
 }
 
+em
+{
+	font-style:normal;
+	font-size:1.1em;
+	font-family: Inter;
+	letter-spacing: 0.05em;
+}
+
 p, em, strong
 {
 	font-family:Lora;
 	font-size:1.2em;
 	line-height: 180%;
+}
+
+.btn
+{
+	font-family:Inter;
 }
 
 /*** TITLES ***/
@@ -89,6 +104,12 @@ h1.admin
 .display-7
 {
 	font-size:1.3em;
+}
+
+.display-8
+{
+	font-size:1.1em;
+	font-weight:300;
 }
 
 /*** HEADER ***/
@@ -132,12 +153,6 @@ nav
 	position: relative
 }
 
-.test
-{
-	width: 100%;
-	height:auto;
-}
-
 article
 {
 	height:100%;
@@ -165,8 +180,33 @@ article
 	flex-flow:column nowrap;
 	justify-content:center;
 	align-items:center;
-	height:100vh;
+	min-height:100vh;
 }
+
+.featured
+{
+	font-family:Inter;
+	font-size:1.2em;
+}
+
+/*** STORIES ***/
+
+.author-name
+{
+	font-size:0.8em;
+}
+
+.tab-select
+{
+	font-family:Inter;
+	font-size:1.2em;
+}
+
+figure.thumbnail
+{
+	height:170px;
+}
+
 
 /*** ABOUT ***/
 
@@ -238,6 +278,12 @@ article
 .text-404
 {
 font-size:1.5em;
+}
+
+/*** OTHER ***/
+
+.blog-post-author {
+    display: none;
 }
  
 

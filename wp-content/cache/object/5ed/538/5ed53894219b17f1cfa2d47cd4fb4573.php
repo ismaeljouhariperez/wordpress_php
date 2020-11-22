@@ -1,0 +1,1 @@
+Kâº_<?php exit; ?>a:1:{s:7:"content";s:46:"{"good":"10","recommended":"9","critical":"0"}";}

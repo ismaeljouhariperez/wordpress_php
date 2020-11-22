@@ -1,0 +1,28 @@
+<?php //the_terms(get_the_ID(), 'sport') ?>
+<?php //$sports = get_terms(['taxonomy' => 'sport']); ?>
+    <!--<ul class="nav nav-pills my-4">
+        <?php //foreach($sports as $sport): ?>
+        <li class="nav-item">
+            <a href="<?= //get_term_link($sport) ?>" class="nav-link <?= //is_tax('sport', $sport->term_id) ? 'active' : '' ?>"><?= //$sport->name ?></a>
+        </li>
+        <?php //endforeach; ?>
+    </ul>-->
+
+
+
+
+
+
+    <div class="card-deck m-0">
+        <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>    
+
+            <div class="card col-4 border-0">
+                <?php get_template_part('parts/card', 'post') ?>
+            </div>   
+           <?php endwhile; else : ?>       
+        </div> 
+
+        <h1 class="text-center"> Aucun article publié </h1>  
+<?php endif; ?>
+    </div>
+</div> 

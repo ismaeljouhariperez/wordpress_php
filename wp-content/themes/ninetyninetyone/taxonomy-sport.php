@@ -29,7 +29,7 @@
 
     </div>
 
-    <?php nineninetyone_pagination() ?>
+    <?php Admin\View::paginate() ?>
 
 <?php else : ?>
     <h1>Pas d'articles</h1>
