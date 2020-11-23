@@ -3,21 +3,15 @@
 namespace Admin;
 
 class App
-{
-    
-    /**
-     * Constructor
-     */
+{ 
     public function __construct() 
     {
-        add_action( 'after_setup_supports', array( $this, 'ninetyninetyone_supports') );
+        add_action( 'theme_supports', array( $this, 'ninetyninetyone_supports') );
         add_action( 'after_setup_theme', array( $this, 'ninetyninetyone_registerassets') );
         add_action( 'wp_enqueue_scripts', array( $this, 'wpb_add_google_fonts') );
         add_action( 'login_enqueue_scripts', array( $this, 'my_login_logo') );
         add_filter( 'document_title_separator', array( $this,'nineninetyone_title_separator'));
         add_filter( 'document_title_parts', array( $this,'nineninetyone_title_parts'));
-        //add_filter( 'nav_menu_link_attributes', array( $this,'nineninetyone_menu_links_class'));
-        //add_action( 'pre_get_posts', array( $this, 'ninetyninetyone_pre_get_posts'));
     }
 
     public function ninetyninetyone_supports()
@@ -35,12 +29,10 @@ class App
         add_theme_support( 'post-thumbnails' );
 
         add_image_size( 'post-thumbnail', 350, 215, true);
+        add_image_size( 'homepage-thumb', 270, 175, false );
         add_image_size( 'screen', 2000, 1000, true);
         // remove width & height attributes from images
-        function remove_img_attr ($html)
-        {
-            return preg_replace('/(width|height)="\d+"\s/', "", $html);
-        }
+        
         add_filter( 'post_thumbnail_html', 'remove_img_attr' );
         /** HTML5 support **/
         add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
@@ -141,6 +133,6 @@ class App
 
 }
 
-$app = new App;
+new App;
 
 ?>

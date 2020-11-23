@@ -7187,17 +7187,28 @@ li {
 
 em {
   font-style: normal;
-  font-size: 1.1em;
+  font-size: 1rem;
   font-family: Inter;
-  letter-spacing: 0.05em; }
+  letter-spacing: 0.05em;
+  line-height: 150%; }
 
-p, em, strong {
+p, strong {
   font-family: Lora;
   font-size: 1.2em;
   line-height: 180%; }
 
 .btn {
   font-family: Inter; }
+
+/*** IMAGES ***/
+figure {
+  overflow: hidden; }
+
+figure img {
+  height: auto; }
+
+figure#main-content img {
+  width: 90%; }
 
 /*** TITLES ***/
 h1, h2, h3, h4, h5 {
@@ -7275,10 +7286,14 @@ article {
   font-family: Inter;
   font-size: 1.2em; }
 
-/*** STORIES ***/
-.author-name {
-  font-size: 0.8em; }
+figure.preview {
+  height: 130px; }
 
+.slug {
+  font-family: Inter;
+  font-size: 1rem; }
+
+/*** STORIES ***/
 .tab-select {
   font-family: Inter;
   font-size: 1.2em; }

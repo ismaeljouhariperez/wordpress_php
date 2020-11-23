@@ -177,6 +177,16 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/js\/form-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/form-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"\/js\/form.js": {
 		"ft": 64,
 		"ma": 0,
@@ -186,13 +196,6 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
-		},
-	"\/other": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/other",
-		"oF": 0
 		},
 	"\/parts\/card.php": {
 		"cB": 0,

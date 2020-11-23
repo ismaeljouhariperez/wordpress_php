@@ -49,4 +49,23 @@ class View
         wp_register_script('select', get_template_directory_uri() . '/js/form.js', array(), rand(111,9999), 'all');
         wp_enqueue_script('select');
     }
+
+    public static function search(string $slug)
+    {
+        $args = array
+        (
+            'post_type'  => 'post',
+            'tax_query'  => array
+            (
+                array
+                (
+                    'taxonomy'  => 'post_tag',
+                    'field'     => 'slug',
+                    'terms'     =>  $slug
+                ),
+            ),
+        );
+        $query = new \WP_Query($args);
+        return $query;
+    }
 }

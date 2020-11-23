@@ -1,1 +1,1 @@
-fåº_<?php exit; ?>a:1:{s:7:"content";a:8:{s:17:"Activated_Akismet";b:1;s:11:"db_upgraded";b:1;s:11:"medium_crop";b:1;s:17:"medium_large_crop";b:1;s:10:"large_crop";b:1;s:34:"_transient_timeout_is_multi_author";b:1;s:26:"_transient_is_multi_author";b:1;s:29:"_transient_timeout_doing_cron";b:1;}}
+ó»_<?php exit; ?>a:1:{s:7:"content";a:1:{s:17:"Activated_Akismet";b:1;}}
