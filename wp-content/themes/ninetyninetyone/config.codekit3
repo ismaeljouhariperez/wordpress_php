@@ -98,49 +98,45 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/assets\/smo\/Facebook.png": {
-		"ft": 32768,
-		"iS": 281,
-		"oA": 0,
-		"oAP": "\/assets\/smo\/Facebook.png",
+	"\/assets\/smo\/Facebook.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/smo\/Facebook.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/assets\/smo\/Instagram.png": {
-		"ft": 32768,
-		"iS": 642,
-		"oA": 0,
-		"oAP": "\/assets\/smo\/Instagram.png",
+	"\/assets\/smo\/Instagram.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/smo\/Instagram.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/assets\/smo\/Twitter.png": {
-		"ft": 32768,
-		"iS": 479,
-		"oA": 0,
-		"oAP": "\/assets\/smo\/Twitter.png",
+	"\/assets\/smo\/Twitter.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/smo\/Twitter.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
-	"\/assets\/smo\/Youtube.png": {
-		"ft": 32768,
-		"iS": 403,
-		"oA": 0,
-		"oAP": "\/assets\/smo\/Youtube.png",
+	"\/assets\/smo\/Youtube.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/smo\/Youtube.svg",
 		"oF": 0,
-		"oIPL": 0,
 		"opt": 0,
-		"oT": 1,
-		"q": 100
+		"plM": 3758088159,
+		"prP": 0
 		},
 	"\/contact.php": {
 		"cB": 0,

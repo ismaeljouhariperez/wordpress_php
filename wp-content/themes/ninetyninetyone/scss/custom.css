@@ -7315,6 +7315,9 @@ figure.thumbnail {
   height: auto;
   margin: 15px 0; }
 
+#about-content h2 {
+  margin: 2rem 0; }
+
 /*** FOOTER ***/
 .footer-first {
   padding: 30px 13px 20px 38px; }

@@ -23,10 +23,10 @@
                 <p class="footer-text text-white">Offshore is a journal for the daily explorators, for those who love the outdoors, telling stories of passionate people inspired by nature. We are an inspirational medium for travelers and photography lovers.</p>
             </div>
             <div class="smo">
-                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Facebook.png"></a>
-                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Instagram.png"></a>
-                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Twitter.png"></a>
-                <a><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/smo/Youtube.png"></a>
+                <a><img src="<?= get_template_directory_uri() ?>/assets/smo/Facebook.svg"></a>
+                <a><img src="<?= get_template_directory_uri() ?>/assets/smo/Instagram.svg"></a>
+                <a><img src="<?= get_template_directory_uri() ?>/assets/smo/Twitter.svg"></a>
+                <a><img src="<?= get_template_directory_uri() ?>/assets/smo/Youtube.svg"></a>
             </div>
         </div>
         <div class="footer-third pt-2 pb-3">
