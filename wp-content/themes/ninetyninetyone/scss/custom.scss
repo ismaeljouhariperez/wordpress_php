@@ -219,8 +219,6 @@ figure.preview
 	font-size:1rem;
 }
 
-
-
 /*** STORIES ***/
 
 .tab-select
@@ -234,6 +232,13 @@ figure.thumbnail
 	height:170px;
 }
 
+/*** ARTICLE ***/
+
+#article-content h2,
+#article-content img
+{
+	margin:2rem 0;
+}
 
 /*** ABOUT ***/
 

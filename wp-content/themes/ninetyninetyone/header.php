@@ -7,7 +7,7 @@
 </head>
 <body class="Site">
 
-    <nav class="header <?php if(!is_front_page()): ?> mb-5 <?php endif ?>">  
+    <nav class="header <?php if(!is_front_page() && !is_singular('post')): ?> mb-5 <?php endif ?>">  
         <div class="col-2">
             <a class="col-10" href="/index.php">
                 <img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore.svg" width="150px" height="auto" alt="">
@@ -31,6 +31,6 @@
     </nav>
 
     <main class="Site-content">
-        <?php if(!is_front_page() || ( is_single('19') && 'post' == get_post_type() ) ): ?>
+        <?php if(!is_front_page() && !is_singular('post') ): ?>
                     <div class="container">
        <?php endif ?>

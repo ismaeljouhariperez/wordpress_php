@@ -1,25 +1,20 @@
-<?php get_header();
-
+<?php 
+get_header();
 if( have_posts() ) : while ( have_posts() ) : the_post(); 
-$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) , '' );
-$featured_img_url = $featured_img[0];
-
+$tag = \Admin\View::get_tag();
+$reading_time = \Admin\View::count_words();
 ?>
 
 <!-- IMAGE -->
 <figure>
-    <img src="<?= $featured_img_url ?>" />
-    <?php the_post_thumbnail() ?>
+    <?php the_post_thumbnail(); ?>
 </figure>
 <!-- TITLE -->
-    <div class="row mx-auto">
-        <div class="col-12">
-            <h1 class="text-left text-secondary display-3"> <?= the_title() ?></h1>
-            <?php //if(get_post_meta(get_the_ID(), SponsoMetaBox::META_KEY, true) === '1'): ?>
-                <div class='alert alert-info'>
-                    Cet article est sponsorisé
-                </div>
-            <?php //endif ?>
+<div class="container">
+    <div class="row mx-auto py-4">
+        <div class="col-12 d-flex justify-content-center flex-column align-items-center">
+            <p class="text-center">by <span class="text-secondary"><?php the_author() ?></span></p>
+            <h1 class="text-center text-primary"> <?php the_title() ?></h1>
         </div>
     </div>
 <!-- SEPARATOR -->
@@ -29,72 +24,36 @@ $featured_img_url = $featured_img[0];
     </div>
 </div>
     <div class="row mx-auto">    
-        <!-- CHAPTER -->
-        <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
-            <h3 class="text-uppercase text-primary">Chapitre</h3>
-        
+        <!-- Tag -->
+        <div class="col-2">
+            <em class="text-secondary"><?= $tag ?></em>
         </div>  
-        <!-- DATE -->
-        <div class="col-sm-6 col-md-3">
-            <p class="text-muted text-sm-center text-md-right text-lg-right text-xl-right"><?= the_date() ?></p>
+        <!-- Date -->
+        <div class="col-3">
+            <em class="text-muted text-left"><?= the_date() ?></em>
         </div>
-        <!-- READING TIME -->
-        <div class="col-sm-6 col-md-3">
-            <p class="text-muted text-sm-center text-md-right text-lg-right text-xl-right">Temps de lecture : minutes</p>
+        <!-- Reading Time -->
+        <div class="offset-4 col-3">
+            <em class="text-muted text-sm-center text-md-right text-lg-right text-xl-right">Reading Time : <?= $reading_time ?> min</em>
         </div>
     </div>
-
 <!-- CONTENT -->
-    <div class="row mx-auto mb-3">
+    <div class="row mx-auto py-5" id="article-content">
         <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-1">
-            <p><b><?= the_excerpt() ?></b></p>
-        </div>
-    </div>
-    <div class="row mx-auto">
-        <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-1">
-            <?= the_content() ?>
+            <p><?= the_content() ?></p>
         </div>
     </div>
 
-<?php endwhile; else : ?>
-<h1> Aucun article publié </h1>
-<?php endif; ?>
 
-<?php previous_post_link() ?>
-<?php next_post_link() ?>
+<div class="row mx-auto pt-5">
+    <div class="col-9 offset-1 d-flex justify-content-between">
+        <div class="col-4">← <?php previous_post_link( '<strong>%link</strong>' ); ?></div>
+        <div class="col-4"><?php next_post_link( '<strong>%link</strong>' ); ?> →</div>
+    </div>
 
-<?php 
-
-$sports = get_terms(['taxonomy' => 'sport']);
-
-if ( ! empty( $sports ) && ! is_wp_error( $sports ) ) : ?>
-
-    <?php $terms = array_map(function($term) 
-    {
-        return $term->term_id;
-    }, get_the_terms(get_post(), 'sport'));
-
-    $query = new WP_Query(
-    [
-        'post__not_in' => [get_the_ID()],
-        'post_type' => 'post',
-        'posts_per_page' => 3,
-        'tax_query' => 
-        [
-            [
-                'taxonomy' => 'sport',
-                'field' => 'slug',
-                'terms' => $terms
-            ]
-        ]
-    ]);
-    while($query->have_posts()) : the_post() ?>
-        <h2>Articles relatifs</h2>
-
-    <?php endwhile ; wp_reset_postdata(); //Permet de conserver le même ID d'article 
-    
-endif ?>
+</div>
 
 
+<?php endwhile; endif?>
 
-<?php get_footer() ?>
+<?php get_footer(); ?>

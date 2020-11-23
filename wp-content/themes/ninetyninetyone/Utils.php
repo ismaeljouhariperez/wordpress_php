@@ -42,6 +42,16 @@ class View
         return round($words/200);
     }
 
+    public static function get_tag()
+    {
+        $post_tags = get_the_tags();
+        if ( $post_tags ) {
+            foreach( $post_tags as $tag ) {
+            return $tag->name; 
+            }
+        }
+    }
+
     public static function render(string $path, array $variables = []) : void
     {
         extract($variables); // Displays all variables one by one
