@@ -4,7 +4,7 @@
     <footer class="bg-secondary mt-5"> 
         <nav class="footer-first">  
             <div class="col-2">
-                <a href="/index.php"><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore-white.svg" width="150px" height="auto" alt="" /></a>
+                <a href="/index.php"><img src="<?= get_template_directory_uri() ?>/assets/images/Logo-Offshore-white.svg" width="150px" height="auto" alt="" /></a>
             </div>
             <div class="footer-items col-10" id="navbarSupportedContent">
                 <ul>

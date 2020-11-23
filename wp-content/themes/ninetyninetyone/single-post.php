@@ -6,7 +6,7 @@ $reading_time = \Admin\View::count_words();
 ?>
 
 <!-- IMAGE -->
-<figure>
+<figure class="text-center">
     <?php the_post_thumbnail(); ?>
 </figure>
 <!-- TITLE -->
@@ -39,18 +39,15 @@ $reading_time = \Admin\View::count_words();
     </div>
 <!-- CONTENT -->
     <div class="row mx-auto py-5" id="article-content">
-        <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-1">
+        <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
             <p><?= the_content() ?></p>
         </div>
     </div>
 
 
 <div class="row mx-auto pt-5">
-    <div class="col-9 offset-1 d-flex justify-content-between">
-        <div class="col-4">← <?php previous_post_link( '<strong>%link</strong>' ); ?></div>
-        <div class="col-4"><?php next_post_link( '<strong>%link</strong>' ); ?> →</div>
-    </div>
-
+        <div class="col-6 text-left"> <?php previous_post_link( '← <strong>%link</strong>' ); ?></div>
+        <div class="col-6 text-right"><?php next_post_link( '<strong>%link</strong> →' ); ?></div>
 </div>
 
 

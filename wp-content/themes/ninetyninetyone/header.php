@@ -10,7 +10,7 @@
     <nav class="header <?php if(!is_front_page() && !is_singular('post')): ?> mb-5 <?php endif ?>">  
         <div class="col-2">
             <a class="col-10" href="/index.php">
-                <img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore.svg" width="150px" height="auto" alt="">
+                <img src="<?= get_template_directory_uri() ?>/assets/images/Logo-Offshore.svg" width="150px" height="auto" alt="">
             </a>
         </div>
       
