@@ -9,6 +9,13 @@
 	],
 "creatorBuild": "26667",
 "files": {
+	"\/.gitignore": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
 	"\/404.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -196,6 +203,13 @@
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
+		},
+	"\/parts\/articles.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/parts\/articles.php",
+		"oF": 0
 		},
 	"\/parts\/card.php": {
 		"cB": 0,

@@ -1,1 +1,1 @@
-´%»_<?php exit; ?>a:1:{s:7:"content";a:1:{s:17:"Activated_Akismet";b:1;}}
+~V»_<?php exit; ?>a:1:{s:7:"content";a:3:{s:17:"Activated_Akismet";b:1;s:24:"_site_transient_timeout_";b:1;s:16:"_site_transient_";b:1;}}

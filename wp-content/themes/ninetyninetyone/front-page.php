@@ -1,19 +1,13 @@
 
 <?php 
 
-$original = Admin\View::search('original');
-$featured = Admin\View::search('featured');
-$sponsored = Admin\View::search('sponsored');
+$original = Admin\View::search_slug('original');
+$featured = Admin\View::search_slug('featured');
+$sponsored = Admin\View::search_slug('sponsored');
 
-$latest_posts = new WP_Query(
-    array(
-    'post_type' => 'post',
-    'posts_per_page' => 10,
-    'orderby'         => 'post_date',
-    'order'           => 'DESC',
-    'post_status'     => 'publish'
-    )
-);?>
+$latest_posts = Admin\View::display_latest_posts(10);
+
+?>
 
 <!-- SUB HEADER -->
 <div class="row mx-auto pt-5 pb-4">

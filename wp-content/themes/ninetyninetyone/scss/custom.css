@@ -7348,6 +7348,15 @@ figure.thumbnail {
 .text-404 {
   font-size: 1.5em; }
 
+/*** FORM ***/
+.form-group input,
+.form-group textarea {
+  border: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #ECECEC; }
+
 /*** OTHER ***/
 .blog-post-author {
   display: none; }

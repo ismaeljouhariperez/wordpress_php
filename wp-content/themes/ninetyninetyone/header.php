@@ -17,13 +17,12 @@
         <div class="header-items" id="navbarSupportedContent">
             <ul>
             <?php 
-        wp_nav_menu([
-            'theme_location' => 'header', 
-            'container' => false,
-            'menu_class' => 'header-items'
-        ]) 
-       
-        ?>
+                wp_nav_menu([
+                    'theme_location' => 'header', 
+                    'container' => false,
+                    'menu_class' => 'header-items'
+                ])   
+            ?>
             </ul>
       
          </div>
@@ -32,6 +31,6 @@
     </nav>
 
     <main class="Site-content">
-        <?php if(!is_front_page()): ?>
+        <?php if(!is_front_page() || ( is_single('19') && 'post' == get_post_type() ) ): ?>
                     <div class="container">
        <?php endif ?>

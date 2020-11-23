@@ -119,18 +119,6 @@ class App
             array( 'login' ) 
         );
     }
-    /**
-     * @param WP_Query $query
-     */
-    /*
-    function ninetyninetyone_pre_get_posts(WP_Query $query)
-    {
-        if(is_admin() )
-        {
-            return;
-        }
-    }*/
-
 }
 
 new App;

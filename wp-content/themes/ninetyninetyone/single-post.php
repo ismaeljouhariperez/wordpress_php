@@ -1,8 +1,17 @@
-<?php get_header();?>
+<?php get_header();
 
+if( have_posts() ) : while ( have_posts() ) : the_post(); 
+$featured_img = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID) , '' );
+$featured_img_url = $featured_img[0];
+
+?>
+
+<!-- IMAGE -->
+<figure>
+    <img src="<?= $featured_img_url ?>" />
+    <?php the_post_thumbnail() ?>
+</figure>
 <!-- TITLE -->
-<div class="container-fluid ">
-    <?php if( have_posts() ) : while ( have_posts() ) : the_post(); ?>
     <div class="row mx-auto">
         <div class="col-12">
             <h1 class="text-left text-secondary display-3"> <?= the_title() ?></h1>
@@ -13,14 +22,12 @@
             <?php //endif ?>
         </div>
     </div>
-</div>
 <!-- SEPARATOR -->
 <div class="row mx-auto">
     <div class="col-12">
         <hr class="bg-secondary">
     </div>
 </div>
-<div class="container-fluid ">
     <div class="row mx-auto">    
         <!-- CHAPTER -->
         <div class="col-sm-12 col-md-4 col-lg-6 col-xl-6">
@@ -36,13 +43,8 @@
             <p class="text-muted text-sm-center text-md-right text-lg-right text-xl-right">Temps de lecture : minutes</p>
         </div>
     </div>
-</div>
-<!-- IMAGE -->
-<figure id="article-image" class="d-flex flex-row justify-content-center">
-    <?php the_post_thumbnail('large', ['class' => 'card-img-top', 'alt' => '', 'style' => 'height: auto;']) ?>
-</figure>
+
 <!-- CONTENT -->
-<div class="container-fluid">
     <div class="row mx-auto mb-3">
         <div class="col-sm-12 col-md-12 col-lg-10 offset-lg-1 col-xl-9 offset-xl-1">
             <p><b><?= the_excerpt() ?></b></p>
@@ -53,7 +55,6 @@
             <?= the_content() ?>
         </div>
     </div>
-</div>
 
 <?php endwhile; else : ?>
 <h1> Aucun article publié </h1>

@@ -1,25 +1,21 @@
 </div>
 </main>
-
     <!-- FOOTER -->
     <footer class="bg-secondary mt-5"> 
         <nav class="footer-first">  
             <div class="col-2">
                 <a href="/index.php"><img src="http://localhost/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore-white.svg" width="150px" height="auto" alt="" /></a>
             </div>
-        
             <div class="footer-items col-10" id="navbarSupportedContent">
                 <ul>
                 <?php 
-            wp_nav_menu([
-                'theme_location' => 'header', 
-                'container' => false,
-                'menu_class' => 'header-items'
-            ]) 
-        
-            ?>
+                    wp_nav_menu([
+                        'theme_location' => 'header', 
+                        'container' => false,
+                        'menu_class' => 'header-items'
+                    ]) 
+                ?>
                 </ul>
-        
             </div>
         </nav>
         <div class="footer-second">
