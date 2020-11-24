@@ -10,6 +10,7 @@ class Model
     {
         global $wpdb;
         $this->wpdb = $wpdb;
+        $this->table = $this->wpdb->forms . "wp_forms";
     }
 
     public function insert(string $name, string $surname, string $email, string $message) : void
@@ -49,9 +50,15 @@ class Model
     public function select_data()
     {
         $wp_forms = $this->wpdb->forms . "wp_forms";
-        $info = $this->wpdb->prepare("SELECT name,surname,email,message FROM {$wp_forms}");
+        $info = $this->wpdb->prepare("SELECT id,name,surname,email,message FROM {$wp_forms}");
         $result = $this->wpdb->get_results($info);
         return $result;
+    }
+
+    public function delete(int $id) : void
+    {
+        $sql = $this->wpdb->prepare("DELETE FROM {$this->table} WHERE id = ($id)");
+        $this->wpdb->query($sql);
     }
 }
 

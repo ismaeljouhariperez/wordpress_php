@@ -1,4 +1,4 @@
- ¼_<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:2;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2020-11-14 16:51:33";s:13:"post_date_gmt";s:19:"2020-11-14 21:51:33";s:12:"post_content";s:950:"<!-- wp:paragraph -->
+ðZ¼_<?php exit; ?>a:1:{s:7:"content";O:8:"stdClass":24:{s:2:"ID";i:2;s:11:"post_author";s:1:"1";s:9:"post_date";s:19:"2020-11-14 16:51:33";s:13:"post_date_gmt";s:19:"2020-11-14 21:51:33";s:12:"post_content";s:950:"<!-- wp:paragraph -->
 <p>Offshore was born from the passion of Pauline, graphic designer and nature lover and Ismael, surfer and photographer. Through their travels and the people they met, they wanted to share their discoveries. More than an outdoor magazine, Offshore shows us that the places we visit have a history, as well as their inhabitants and that it is possible to travel differently, to enjoy nature while preserving it.</p>
 <!-- /wp:paragraph -->
 

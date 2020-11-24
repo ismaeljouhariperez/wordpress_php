@@ -19,7 +19,7 @@ class Admin extends Controller
         add_dashboard_page( __( 'WPForm Plugin Dashboard', 'textdomain' ), __( 'Contact Forms', 'textdomain' ), 'read', 'wpform-unique-identifier', array($this,'wpform_plugin_function') );
     }
 
-    function wpform_plugin_function() 
+    public function wpform_plugin_function() 
     {
         // Get Data
         $data = $this->model->select_data();
@@ -28,9 +28,37 @@ class Admin extends Controller
         // Render the menu panel
         \Render::view('panel', compact('data') );
     }
+
+    public function edit()
+    {
+        if(is_admin()) 
+        {
+            switch(isset($_POST))
+            {
+                case isset($_POST['delete']):
+                //do something
+                //ask id SELECT id for 
+                //delete in db DELETE
+                //        \Render::view('panel', compact('data') );
+                $id = ($_POST['get_id']);
+                $this->model->delete($id);
+
+                break;
+                case isset($_POST['B']):
+                //do something
+                break;
+                case isset($_POST['C']):
+                //do something
+                break;
+            } 
+        }
+    }
 }
 
-new Admin;
+
+$edit = new Admin;
+$edit->edit();
+
 
 
 ?>
