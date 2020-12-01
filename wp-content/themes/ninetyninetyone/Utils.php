@@ -118,4 +118,16 @@ class View
         echo '</ul>';
         echo '</nav>';
     }
+
+    public static function check_plugin(string $folder, string $plugin) 
+    {
+        // get array of active plugins
+        $active_plugins = (array) get_option( 'active_plugins', array() );
+        // see active plugins 'plugin-dir-name/plugin-base-file.php'
+        if ( ! empty( $active_plugins ) && in_array( $folder . "/" . $plugin . ".php", $active_plugins ) ) 
+        {
+            return $result = true;
+        }
+    }
+
 }

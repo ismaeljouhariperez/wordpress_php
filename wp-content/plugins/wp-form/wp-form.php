@@ -17,5 +17,4 @@ define( 'WPF_PLUGIN_DIR', untrailingslashit( dirname( WPF_PLUGIN ) ) );
 require_once(WPF_PLUGIN_DIR . '/Controller/Admin.php');
 require_once(WPF_PLUGIN_DIR . '/Controller/Process.php');
 
-
 ?>

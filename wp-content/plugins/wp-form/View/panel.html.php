@@ -22,7 +22,7 @@
         <form method="POST">
             <td st-ratio="10">
                 <input type="hidden" name="get_id" value="<?= $print->id;?>">
-                <button style="border:0;outline:none;" type="submit" name="delete">
+                <button style="border:0;outline:none;background:none;" type="submit" name="delete">
                     <img src="<?= get_template_directory_uri() ?>/assets/images/delete.svg " />
                 </button>
             </td>

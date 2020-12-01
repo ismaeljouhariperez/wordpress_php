@@ -6,7 +6,13 @@ require_once(WPF_PLUGIN_DIR . '/Model/Model.php');
 require_once(WPF_PLUGIN_DIR . '/Controller/Controller.php');
 
 class Process extends Controller
-{    
+{   
+    /**
+     * Process data filled by user
+     * 
+    * @method get_form Get information from contact form and insert it in WP database
+    */
+
     public function get_form()
     {   
         // Empty form ?

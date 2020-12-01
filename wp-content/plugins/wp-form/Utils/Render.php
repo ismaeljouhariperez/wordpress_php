@@ -3,13 +3,10 @@
 class Render
 {
     /**
-     * Displays an HTML template and insert data
-     * @param string folder Main folder (back/front)
      * @param string path Path of the file to read
      * @param array $variables Variables to transpose
      * @return void
      */
-
 
     public static function view(string $path, array $variables = []) : void
     {

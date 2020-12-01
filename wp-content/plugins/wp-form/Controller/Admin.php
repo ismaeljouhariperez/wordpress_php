@@ -8,6 +8,14 @@ require_once(WPF_PLUGIN_DIR . '/Utils/Render.php');
 
 class Admin extends Controller
 {
+    /**
+     * Actions on Wordpress Admin panel
+     * 
+     * @method wpforms_plugin_menu Add a submenu in Wordpress admin
+     * @method wpform_plugin_function Render contact forms filled information in WP Admin
+     * @method edit Add options to edit contacts forms filled information
+     */
+
     public function __construct() 
     {
         parent::__construct();
@@ -36,17 +44,14 @@ class Admin extends Controller
             switch(isset($_POST))
             {
                 case isset($_POST['delete']):
-                //do something
-                //ask id SELECT id for 
-                //delete in db DELETE
-                //        \Render::view('panel', compact('data') );
-                $id = ($_POST['get_id']);
-                $this->model->delete($id);
-
+                    $id = ($_POST['get_id']);
+                    $this->model->delete($id);
                 break;
+
                 case isset($_POST['B']):
                 //do something
                 break;
+
                 case isset($_POST['C']):
                 //do something
                 break;
@@ -55,10 +60,8 @@ class Admin extends Controller
     }
 }
 
-
-$edit = new Admin;
-$edit->edit();
-
+$form = new Admin;
+$form->edit();
 
 
 ?>

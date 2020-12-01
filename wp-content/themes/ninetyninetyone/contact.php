@@ -7,6 +7,9 @@ Template Name: Contact
 session_start();
 get_header(); 
 
+// Check if plugin is activated
+$wp_form_activated = Admin\View::check_plugin('wp-form', 'wp-form'); 
+
 ?>
 
 <!-- TITLE -->
@@ -18,6 +21,7 @@ get_header();
 </div>
 <div class="row mx-auto">
   <!-- CONTACT FORM -->
+  <?php if ($wp_form_activated === true) : ?>
   <div class="col-4">
       <h2 class="py-3">Contact form</h2>
       <?php if( !empty($_POST) || $_POST['init'] != NULL) : ?>
@@ -76,6 +80,15 @@ get_header();
       <p class="display-7">If you’re interested in partnering with us, we’d love to hear from you. Please email partnership@offshore.com.</p>
   </div>    
 </div>
+<!-- IF PLUGIN DEACTIVATED -->
+<?php else : ?>
+ <!-- SPONSORING  -->
+ <div class="col-12 text-center">
+      <p class="display-7">We partner with select brands who share our values. The support of these companies has helped enable us to continue to create great content and publish Offshore.</p>
+      <p class="display-7">If you’re interested in partnering with us, we’d love to hear from you. Please email partnership@offshore.com.</p>
+  </div>    
+</div>
+<?php endif ; ?>
 
 <?php get_footer(); ?>
 
