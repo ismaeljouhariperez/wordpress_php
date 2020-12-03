@@ -4,11 +4,11 @@ body
     background: #232634;
 }
 
-/* Logo */
+/* Logo 
 #login h1 a, .login h1 a 
 {
-    background-image: url('wp-content/themes/ninetyninetyone/assets/logo.png');
-}
+    background-image: url('/Users/ismael-perez/Documents/Github/repo/wordpress_php/wp-content/themes/ninetyninetyone/assets/images/Logo-Offshore.svg');
+}*/
 
 /* Button */
 

@@ -4,10 +4,21 @@ namespace Admin;
 
 class View 
 {
-    public static function paginate() 
-    {
-        add_action('page_navigate', [self::class, 'ninetyninetyone_pagination']);
-    }
+    /**
+    * Only static functions
+    * View utilities that can be used to display frontend components
+
+    * @method search_posts Retrieves posts by category
+    * @method display_latest_posts Displays the latest posts published 
+    * @method count_words Calculates an average content reading time
+    * @method get_tag Displays tag for a given post
+    * @method navigate_tabs Enable navigation tab on articles categories with JS
+    * @method search_categories Return all the existing categories
+    * @method search_slug Displays articles by slug
+    * @method check_plugin Checks if a plugin is activated
+    * @method render Renders a specific page
+    * @method paginate Adds pagination on pages
+    */
 
     public static function search_posts($per_page, $category_name)
     {
@@ -52,12 +63,6 @@ class View
         }
     }
 
-    public static function render(string $path, array $variables = []) : void
-    {
-        extract($variables); // Displays all variables one by one
-        get_template_part( 'parts/' . $path, 'page' );
-    }   
-
     public static function navigate_tabs()
     {
         wp_register_script('select', get_template_directory_uri() . '/js/form-min.js', array(), rand(111,9999), 'all');
@@ -94,6 +99,28 @@ class View
         return $query;
     }
 
+    public static function check_plugin(string $folder, string $plugin) 
+    {
+        // get array of active plugins
+        $active_plugins = (array) get_option( 'active_plugins', array() );
+        // see active plugins 'plugin-dir-name/plugin-base-file.php'
+        if ( ! empty( $active_plugins ) && in_array( $folder . "/" . $plugin . ".php", $active_plugins ) ) 
+        {
+            return $result = true;
+        }
+    }
+
+    public static function render(string $path, array $variables = []) : void
+    {
+        extract($variables); // Displays all variables one by one
+        get_template_part( 'parts/' . $path, 'page' );
+    }   
+
+    public static function paginate() 
+    {
+        add_action('page_navigate', [self::class, 'ninetyninetyone_pagination']);
+    }
+
     public static function ninetyninetyone_pagination()
     {
         $pages = paginate_links(['type' => 'array']);
@@ -117,17 +144,6 @@ class View
         }
         echo '</ul>';
         echo '</nav>';
-    }
-
-    public static function check_plugin(string $folder, string $plugin) 
-    {
-        // get array of active plugins
-        $active_plugins = (array) get_option( 'active_plugins', array() );
-        // see active plugins 'plugin-dir-name/plugin-base-file.php'
-        if ( ! empty( $active_plugins ) && in_array( $folder . "/" . $plugin . ".php", $active_plugins ) ) 
-        {
-            return $result = true;
-        }
     }
 
 }

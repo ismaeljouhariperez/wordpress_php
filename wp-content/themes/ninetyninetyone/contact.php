@@ -16,13 +16,13 @@ $wp_form_activated = Admin\View::check_plugin('wp-form', 'wp-form');
 <div class="row mx-auto pb-5">
     <div class="col-12 text-center d-flex flex-column align-items-center justify-content-center">
         <h1 class="py-3">Contact</h1>
-        <p class="display-5 col-6">Want to collaborate, make suggestions or just telling us a much you love our work?</p>
+        <p class="display-5 col-xl-6 col-lg-6">Want to collaborate, make suggestions or just telling us a much you love our work?</p>
     </div>
 </div>
 <div class="row mx-auto">
   <!-- CONTACT FORM -->
   <?php if ($wp_form_activated === true) : ?>
-  <div class="col-4">
+  <div class="col-xl-4 mb-sm-3">
       <h2 class="py-3">Contact form</h2>
       <?php if( !empty($_POST) || $_POST['init'] != NULL) : ?>
       <!-- DISPLAY USER FILLED INFORMATION -->
@@ -35,7 +35,7 @@ $wp_form_activated = Admin\View::check_plugin('wp-form', 'wp-form');
             <p>Email</p>
             <p>Message</p>        
         </div>
-        <div class="col-6">
+        <div class="col-xl-6">
             <p><?= ($_POST['user_name']); ?></p>
             <p><?= ($_POST['user_surname']); ?></p>
             <p><?= ($_POST['user_email']); ?></p>
@@ -68,13 +68,13 @@ $wp_form_activated = Admin\View::check_plugin('wp-form', 'wp-form');
           <label for="message">Message</label>
           <textarea class="form-control" name="user_message" id="message" rows="3" required></textarea>
         </div>
-          <button type="submit" value="submit" class="btn btn-primary">Send</button>       
+          <button type="submit" value="submit" class="btn btn-primary mb-3">Send</button>       
           <?php wp_nonce_field( 'form_verify', 'contact_form' ); ?>       
       </form>
       <?php endif; ?>
   </div>
   <!-- SPONSORING  -->
-  <div class="col-6 offset-1">
+  <div class="offset-xl-1 col-xl-6">
       <h2 class="py-3">Sponsoring</h2>
       <p class="display-7">We partner with select brands who share our values. The support of these companies has helped enable us to continue to create great content and publish Offshore.</p>
       <p class="display-7">If you’re interested in partnering with us, we’d love to hear from you. Please email partnership@offshore.com.</p>

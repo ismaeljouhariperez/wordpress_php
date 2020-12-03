@@ -4,17 +4,28 @@ namespace Admin;
 
 class App
 { 
+    /**
+    * Adds Wordpress functionalities
+
+    * @method add_supports Adds Wordpress theme supports
+    * @method register_assets Registers all CSS and JS assets
+    * @method add_google_fonts Adds Google Fonts support
+    * @method my_page_login Configures Wordpress login page
+    * @method add_title_separator Adds title separator
+    * @method unset_tagline Unset tagline in blog title
+    */
+
     public function __construct() 
     {
-        add_action( 'theme_supports', array( $this, 'ninetyninetyone_supports') );
-        add_action( 'after_setup_theme', array( $this, 'ninetyninetyone_registerassets') );
-        add_action( 'wp_enqueue_scripts', array( $this, 'wpb_add_google_fonts') );
-        add_action( 'login_enqueue_scripts', array( $this, 'my_login_logo') );
-        add_filter( 'document_title_separator', array( $this,'nineninetyone_title_separator'));
-        add_filter( 'document_title_parts', array( $this,'nineninetyone_title_parts'));
+        add_action( 'theme_supports', array( $this, 'add_supports') );
+        add_action( 'after_setup_theme', array( $this, 'register_assets') );
+        add_action( 'wp_enqueue_scripts', array( $this, 'add_google_fonts') );
+        add_action( 'login_enqueue_scripts', array( $this, 'my_page_login') );
+        add_filter( 'document_title_separator', array( $this,'add_title_separator'));
+        add_filter( 'document_title_parts', array( $this,'unset_tagline'));
     }
 
-    public function ninetyninetyone_supports()
+    public function add_supports()
     {
         /** Automatic feed link*/
         add_theme_support( 'automatic-feed-links' );
@@ -76,7 +87,7 @@ class App
         ));
     }
 
-    public function ninetyninetyone_registerassets()
+    public function register_assets()
     {
         wp_register_style('bootstrap', get_template_directory_uri() . '/scss/custom.css', array(), rand(111,9999), 'all');
         wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
@@ -94,30 +105,28 @@ class App
         };
     }
 
-    // Change title separator
-    public function nineninetyone_title_separator()
+    public function add_title_separator()
     {
         return '|';
     }
 
-    public function nineninetyone_title_parts($title)
+    public function unset_tagline($title)
     {
         unset($title['tagline']);
         return $title;
     }
 
-    function wpb_add_google_fonts() 
+    function add_google_fonts() 
     {
         wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab&display=swap', false ); 
     }
     
-    public function my_login_logo() 
+    public function my_page_login() 
     {
         wp_enqueue_style( 
-            'custom-login', 
+            'custom_login', 
             get_template_directory_uri() . '/assets/custom-login.css', 
-            array( 'login' ) 
-        );
+            array( 'login' )        );
     }
 }
 
