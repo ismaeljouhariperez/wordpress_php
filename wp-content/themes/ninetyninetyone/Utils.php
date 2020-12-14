@@ -146,4 +146,28 @@ class View
         echo '</nav>';
     }
 
+    public static function comment_form_utils()
+    {
+        $html5 = TRUE; // False if xhtml
+        $req = get_option( 'require_name_email' );
+        $html_req = ( $req ? " required='required'" : '' );
+        $commenter = wp_get_current_commenter();
+        $aria_req = ( $req ? " aria-required='true'" : '' );
+
+        if(!isset($commenter['comment_author']))
+        {
+            $commenter['comment_author']='';
+        }
+
+        if(!isset($commenter['comment_author_email']))
+        {
+            $commenter['comment_author_email']='';
+        }
+
+        if(!isset($commenter['comment_author_url']))
+        {
+            $commenter['comment_author_url']='';
+        }
+    }
+
 }

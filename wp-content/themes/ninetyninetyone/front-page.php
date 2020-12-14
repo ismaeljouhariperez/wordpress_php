@@ -35,7 +35,7 @@ $latest_posts = Admin\View::display_latest_posts(10);
     </div> 
 </article>
 <!-- PHP END LOOP -->
-<?php endwhile; get_header();?>
+<?php endwhile; wp_reset_postdata(); get_header();?>
 <!-- MAIN CONTENT -->
 <div class="container">
     <div class="row mx-auto pt-5">
@@ -56,7 +56,7 @@ $latest_posts = Admin\View::display_latest_posts(10);
             <a href="<?= the_permalink() ?>"><div class="btn btn-outline-primary">Read the story</div></a>
         </div> 
     </div>
-    <?php endwhile; ?>
+    <?php endwhile; wp_reset_postdata(); ?>
     <div class="row mx-auto py-5">
         <!-- PHP LOOP -->
         <?php while ( $sponsored->have_posts() ): $sponsored->the_post() ; ?>
@@ -75,7 +75,7 @@ $latest_posts = Admin\View::display_latest_posts(10);
             </figure>        
         </div>
     </div>        
-    <?php endwhile; ?>
+    <?php endwhile; wp_reset_postdata(); ?>
     <!-- RECENT POSTS TITLE -->
     <div class="row mx-auto">
         <div class="col-xl-10 offset-xl-1">
@@ -98,7 +98,7 @@ $latest_posts = Admin\View::display_latest_posts(10);
             </h3> 
             <p class="display-7 text-center">by <?php the_author(); ?></p>                   
         </div>      
-        <?php endwhile; ?>
+        <?php endwhile; wp_reset_postdata(); ?>
         </div>
     <div class="row mx-auto py-4">
         <div class="d-flex col-12 justify-content-center text-center">

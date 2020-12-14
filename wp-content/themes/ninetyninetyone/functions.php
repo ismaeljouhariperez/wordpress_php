@@ -2,6 +2,8 @@
 
 namespace Admin;
 
+require_once 'walker/CommentWalker.php';
+
 require_once 'App.php';
 require_once 'Utils.php';
 add_theme_support( 'post-thumbnails' );

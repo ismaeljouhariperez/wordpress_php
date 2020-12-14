@@ -49,7 +49,7 @@ $categories = Admin\View::search_categories();
                 </h2>      
                 <p class="display-7 text-center">by <?php the_author(); ?></p>       
             </div>      
-        <?php endwhile; ?>
+        <?php endwhile; wp_reset_postdata(); ?>
     </div>    
 </div>     
 <!-- TAB CONTENT -->
@@ -78,6 +78,7 @@ $categories = Admin\View::search_categories();
                 </div>   
             </div> 
         </div>
-    <?php endwhile; } ?> 
-    <?php //get_search_form() ?>
+                <?php 
+                endwhile; wp_reset_postdata(); } 
+                ?>
 </div>

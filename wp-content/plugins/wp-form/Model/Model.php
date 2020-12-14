@@ -5,6 +5,8 @@ namespace Model;
 class Model
 {
     /**
+     * Operations in Wordpress database
+     * 
      * @property table Name of the table in WP database
      * @method insert Insert data in WP DB
      * @method select_data Select id, name, surname and email from WP DB

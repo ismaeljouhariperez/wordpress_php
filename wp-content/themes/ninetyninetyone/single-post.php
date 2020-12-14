@@ -44,6 +44,17 @@ $reading_time = \Admin\View::count_words();
         </div>
     </div>
 
+<div class="row mx-auto pt-2">
+    <div class="col-10 offset-1 d-flex flex-column">
+    <?php endwhile; endif;
+    if (comments_open() || get_comments_number()) 
+    {
+        comments_template();
+    }
+    ?>
+    </div>
+</div>
+
 
 <div class="row mx-auto pt-5">
         <div class="col-6 text-left"> <?php previous_post_link( '← <strong>%link</strong>' ); ?></div>
@@ -51,6 +62,6 @@ $reading_time = \Admin\View::count_words();
 </div>
 
 
-<?php endwhile; endif?>
+
 
 <?php get_footer(); ?>

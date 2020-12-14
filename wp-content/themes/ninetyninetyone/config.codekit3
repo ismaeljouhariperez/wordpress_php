@@ -159,6 +159,13 @@
 		"plM": 3758088159,
 		"prP": 0
 		},
+	"\/comments.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/comments.php",
+		"oF": 0
+		},
 	"\/contact.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1446,25 +1453,18 @@
 		"oAP": "\/taxonomy-sport.php",
 		"oF": 0
 		},
-	"\/template-page.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-page.php",
-		"oF": 0
-		},
-	"\/template-post.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/template-post.php",
-		"oF": 0
-		},
 	"\/Utils.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/Utils.php",
+		"oF": 0
+		},
+	"\/walker\/CommentWalker.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/walker\/CommentWalker.php",
 		"oF": 0
 		}
 	},
