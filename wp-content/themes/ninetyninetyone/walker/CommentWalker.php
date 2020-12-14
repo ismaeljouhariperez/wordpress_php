@@ -3,75 +3,85 @@
 namespace ninetyninetyone;
 
 /**
- * A custom WordPress comment walker class to implement the Bootstrap 4 Media object in wordpress comment list.
+ * A custom WordPress comment walker class to better display comments levels.
  *
  */
 
 class CommentWalker extends \Walker_Comment 
 {
-	/**
-	 * Output a comment in the HTML5 format.
-	 *
-	 * @since 1.0.0
-	 *
-	 * @see wp_list_comments()
-	 *
-	 * @param object $comment the comments list.
-	 * @param int    $depth   Depth of comments.
-	 * @param array  $args    An array of arguments.
-	 */
-	protected function html5_comment( $comment, $depth, $args ) {
-		$tag = ( $args['style'] === 'div' ) ? 'div' : 'li';
-?>		
-		<<?php echo $tag; ?> id="comment-<?php comment_ID(); ?>" <?php comment_class( $this->has_children ? 'has-children media' : ' media' ); ?>>
+	var $tree_type = 'comment';
+	var $db_fields = array( 'parent' => 'comment_parent', 'id' => 'comment_ID' );
+ 
+		// constructor – wrapper for the comments list
+		function __construct() { 
+            ?>
+
+			<section class="comments-list">
+
+		<?php }
+
+		// start_lvl – wrapper for child comments list
+		function start_lvl( &$output, $depth = 0, $args = array() ) {
+			$GLOBALS['comment_depth'] = $depth + 2; ?>
 			
-			<div class="media-body card mt-3 " id="div-comment-<?php comment_ID(); ?>">
-				<div class="card-header hoverable">
-					<div class="flex-center">
-						<?php if ( $args['avatar_size'] != 0  ): ?>
-						<a href="<?php echo get_comment_author_url(); ?>" class="media-object float-left">
-							<?php echo get_avatar( $comment, $args['avatar_size'],'mm','', array('class'=>"comment_avatar rounded-circle") ); ?>
-						</a>
-						<?php endif; ?>
-						<h4 class="media-heading "><?php echo get_comment_author_link() ?></h4>
-					</div>
-					<div class="comment-metadata flex-center">
-						<a class="hidden-xs-down" href="<?php echo esc_url( get_comment_link( $comment->comment_ID, $args ) ); ?>">
-							<time class=" small btn btn-secondary chip" datetime="<?php comment_time( 'c' ); ?>">
-								<?php comment_date() ?>,
-								<?php comment_time() ?>
-							</time>
-						</a>
-						<ul class="list-inline">
-							<?php edit_comment_link( __( 'Edit' ), '<li class="edit-link list-inline-item btn btn-secondary chip">', '</li>' ); ?>
-							<?php
-								comment_reply_link( array_merge( $args, array(
-									'add_below' => 'div-comment',
-									'depth'     => $depth,
-									'max_depth' => $args['max_depth'],
-									'before'    => '<li class=" reply-link list-inline-item btn btn-secondary chip">',
-									'after'     => '</li>'
-								) ) );	
-							?>
-						</ul>
-					</div><!-- .comment-metadata -->
+			<section class="child-comments comments-list offset-1">
+
+		<?php }
+	
+		// end_lvl – closing wrapper for child comments list
+		function end_lvl( &$output, $depth = 0, $args = array() ) {
+			$GLOBALS['comment_depth'] = $depth + 2; ?>
+
+			</section>
+
+		<?php }
+
+		// start_el – HTML for comment template
+		function start_el( &$output, $comment, $depth = 0, $args = array(), $id = 0 ) {
+			$depth++;
+			$GLOBALS['comment_depth'] = $depth;
+			$GLOBALS['comment'] = $comment;
+			$parent_class = ( empty( $args['has_children'] ) ? '' : 'parent' ); 
+	
+			if ( 'article' == $args['style'] ) {
+				$tag = 'article';
+				$add_below = 'comment';
+			} else {
+				$tag = 'article';
+				$add_below = 'comment';
+			} ?>
+
+			<article <?php comment_class(empty( $args['has_children'] ) ? '' :'parent') ?> id="comment-<?php comment_ID() ?>" itemprop="comment" itemscope itemtype="http://schema.org/Comment">
+				<figure class="gravatar pt-2"><?= get_avatar( $comment, 65, [get_template_directory_uri() . '/assets/images/avatar.jpg'], 'Author’s gravatar' ); ?></figure>
+				<div class="comment-meta post-meta" role="complementary">
+					<h4 class="comment-author">
+						<a class="comment-author-link" href="<?php comment_author_url(); ?>" itemprop="author"><?php comment_author(); ?></a>
+					</h4>
+					<time class="comment-meta-item" datetime="<?php comment_date('Y-m-d') ?>T<?php comment_time('H:iP') ?>" itemprop="datePublished"><?php comment_date('jS F Y') ?>, <a href="#comment-<?php comment_ID() ?>" itemprop="url"><?php comment_time() ?></a></time>
+					<?php edit_comment_link('<p class="comment-meta-item">Edit this comment</p>','',''); ?>
+					<?php if ($comment->comment_approved == '0') : ?>
+					<p class="comment-meta-item">Your comment is awaiting moderation.</p>
+					<?php endif; ?>
 				</div>
-				<div class="card-block warning-color">
-					<?php if ( '0' == $comment->comment_approved ) : ?>
-					<p class="card-text comment-awaiting-moderation label label-info text-muted small"><?php _e( 'Your comment is awaiting moderation.' ); ?></p>
-					<?php endif; ?>				
+				<div class="comment-content post-content" itemprop="text">
+					<?php comment_text() ?>
+					<?php comment_reply_link(array_merge( $args, array('add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
+				</div>
 
-					<div class="comment-content card-text">
-						<?php comment_text(); ?>
-					</div><!-- .comment-content -->
-								
-				<!-- </div> -->
+		<?php }
 
-			<!-- </div>		 -->
-<?php
-	}	
-}
+		// end_el – closing HTML for comment template
+		function end_el(&$output, $comment, $depth = 0, $args = array() ) { ?>
 
+			</article>
 
+		<?php }
 
+		// destructor – closing wrapper for the comments list
+		function __destruct() { ?>
 
+			</section>
+		
+		<?php }
+
+	}
