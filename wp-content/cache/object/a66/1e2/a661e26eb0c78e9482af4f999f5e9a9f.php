@@ -1,1 +1,1 @@
-DGØ_<?php exit; ?>a:1:{s:7:"content";a:1:{s:17:"Activated_Akismet";b:1;}}
+^2Ù_<?php exit; ?>a:1:{s:7:"content";a:1:{s:17:"Activated_Akismet";b:1;}}
