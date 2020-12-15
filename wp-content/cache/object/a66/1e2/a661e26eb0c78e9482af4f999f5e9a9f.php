@@ -1,1 +1,1 @@
-Ò×_<?php exit; ?>a:1:{s:7:"content";a:3:{s:21:"akismet_comment_nonce";b:1;s:20:"akismet_ssl_disabled";b:1;s:18:"akismet_alert_code";b:1;}}
+DGØ_<?php exit; ?>a:1:{s:7:"content";a:1:{s:17:"Activated_Akismet";b:1;}}

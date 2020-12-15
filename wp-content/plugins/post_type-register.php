@@ -10,12 +10,12 @@ Author URI: https://ismaeljouhari.com
 */
 
 register_activation_hook(__FILE__, function () {
-    // Je suis activé
+    // Activated
     touch(__DIR__ . '/pope');
  });
 
  register_deactivation_hook(__FILE__, function () {
-    // Je suis désactivé
+    // Deactivated
     unlink(__DIR__ . '/pope'); 
  });
 

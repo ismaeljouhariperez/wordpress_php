@@ -65,7 +65,7 @@ class View
 
     public static function navigate_tabs()
     {
-        wp_register_script('select', get_template_directory_uri() . '/js/form-min.js', array(), rand(111,9999), 'all');
+        wp_register_script('select', get_template_directory_uri() . '/js/form.js', array(), rand(111,9999), 'all');
         wp_enqueue_script('select');
     }
 
@@ -154,18 +154,15 @@ class View
         $commenter = wp_get_current_commenter();
         $aria_req = ( $req ? " aria-required='true'" : '' );
 
-        if(!isset($commenter['comment_author']))
-        {
+        if(!isset($commenter['comment_author'])) {
             $commenter['comment_author']='';
         }
 
-        if(!isset($commenter['comment_author_email']))
-        {
+        if(!isset($commenter['comment_author_email'])) {
             $commenter['comment_author_email']='';
         }
 
-        if(!isset($commenter['comment_author_url']))
-        {
+        if(!isset($commenter['comment_author_url'])){
             $commenter['comment_author_url']='';
         }
 

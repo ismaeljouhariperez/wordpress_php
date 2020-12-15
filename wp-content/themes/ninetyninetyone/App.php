@@ -13,6 +13,7 @@ class App
     * @method my_page_login Configures Wordpress login page
     * @method add_title_separator Adds title separator
     * @method unset_tagline Unset tagline in blog title
+    * @method customize_header Allow to change header background
     */
 
     public function __construct() 
@@ -20,9 +21,10 @@ class App
         add_action( 'theme_supports', array( $this, 'add_supports') );
         add_action( 'after_setup_theme', array( $this, 'register_assets') );
         add_action( 'wp_enqueue_scripts', array( $this, 'add_google_fonts') );
-        add_action( 'login_enqueue_scripts', array( $this, 'my_page_login') );
+        add_action( 'login_enqueue_scripts', array( $this, 'my_page_login') );        
         add_filter( 'document_title_separator', array( $this,'add_title_separator'));
         add_filter( 'document_title_parts', array( $this,'unset_tagline'));
+        add_action( 'customize_register' , array( $this, 'register' ), 970 );
     }
 
     public function add_supports()
@@ -93,8 +95,11 @@ class App
         wp_register_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js', ['popper', 'jquery'], false, true);
         wp_register_script('popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', [], null, true);
         wp_deregister_script('jquery');
-        wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', false, true);
-
+        wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.js', false, true);
+        if (!is_customize_preview()) {
+            wp_deregister_script('jquery');
+            wp_register_script('jquery', 'https://code.jquery.com/jquery-3.5.1.slim.min.js', [], false, true);
+        }
         wp_enqueue_style('bootstrap');
         wp_enqueue_script('bootstrap');
         wp_deregister_script('select');
@@ -128,7 +133,39 @@ class App
             get_template_directory_uri() . '/assets/custom-login.css', 
             array( 'login' )        );
     }
+
+    /**
+     * 
+     * @param object $wp_customize An instance of the WP_Customize_Manager class.
+     */
+    public function register( $wp_customize ) 
+    {
+        $wp_customize->add_section('apparence', [
+            'title' => 'Appearance customization',
+        ]);
+    
+        $wp_customize->add_setting('header_background', [
+            'default' => 'transparent',
+            'sanitize_callback' => 'sanitize_hex_color'
+        ]);
+        $wp_customize->add_control(new \WP_Customize_Color_Control($wp_customize, 'header_background', [
+            'section' => 'apparence',
+            'label' => 'Header background'
+        ]));
+        add_action( 'customize_preview_init' , array( $this, 'live_preview' ) );
+    
+    }
+
+    public function live_preview()
+    {
+        wp_register_script('header_appearance', get_template_directory_uri() . '/js/header.js', array('jquery', 'customize-preview'), rand(111,9999), 'all');
+
+        wp_enqueue_script('header_appearance', get_template_directory_uri() . '/js/header.js', array('jquery', 'customize-preview'), '', true);     
+  
+    }
+
 }
+
 
 new App;
 

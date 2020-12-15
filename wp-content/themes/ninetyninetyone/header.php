@@ -7,7 +7,7 @@
 </head>
 <body class="Site">
 
-    <nav class="header <?php if(!is_front_page() && !is_singular('post')): ?> mb-5 <?php endif ?>">  
+    <nav class="header <?php if(!is_front_page() && !is_singular('post')): ?> mb-5 <?php endif ?>" style="background-color: <?= get_theme_mod('header_background'); ?>">
         <div class="col-2">
             <a class="col-10" href="/index.php">
                 <img src="<?= get_template_directory_uri() ?>/assets/images/Logo-Offshore.svg" width="150px" height="auto" alt="">

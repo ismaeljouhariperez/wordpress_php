@@ -1,1 +1,1 @@
-³Í×_<?php exit; ?>a:1:{s:7:"content";s:1:"1";}
+ËFØ_<?php exit; ?>a:1:{s:7:"content";s:1:"1";}

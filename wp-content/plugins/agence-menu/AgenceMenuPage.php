@@ -1,6 +1,7 @@
 <?php
 
-class AgenceMenuPage {
+class AgenceMenuPage 
+{
 
     const GROUP = 'agence_options';
 
@@ -54,5 +55,4 @@ class AgenceMenuPage {
         </form>
         <?php 
     }
-
 }

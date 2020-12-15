@@ -1,0 +1,1 @@
+/Users/ismael-perez/Documents/Github/repo/wordpress_php/wp-content/plugins/query-monitor/wp-content/db.php

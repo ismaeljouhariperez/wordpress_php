@@ -10,16 +10,17 @@ Author URI: https://ismaeljouhari.com
 */
 
 register_activation_hook(__FILE__, function () {
-    // Je suis activé
+    // Activated
     touch(__DIR__ . '/taxo');
  });
 
  register_deactivation_hook(__FILE__, function () {
-    // Je suis désactivé
+    // Deactivated
     unlink(__DIR__ . '/taxo'); 
  });
 
- function ninetyninetyone_register_sport() {
+ function ninetyninetyone_register_sport() 
+ {
    register_taxonomy('sport', 'post', [
        'labels' => [
            'name' => 'Sport',
